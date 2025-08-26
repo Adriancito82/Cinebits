@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url(img/ChatGPT\ Image\ 26\ ago\ 2025\,\ 15_31_30.png);
     margin: 0;
     padding: 0;
 }
@@ -12,12 +12,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
 header {
     background: #35424a;
     color: #ffffff;
@@ -25,19 +19,13 @@ header {
     text-align: center;
 }
 
-footer {
-    background: #35424a;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
 
 ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 nav {
@@ -57,10 +45,79 @@ nav a:hover {
     color: #ffffff;
 }
 
-.container table {
+#section {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+#movies {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+#games  {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+
+#contact    {
+    padding: 20px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+table {
     width: 100%;
     border-collapse: collapse;
+    margin: 20px 0;
 }
-.container table, th, td {
-    border: 1px solid #ddd;
+
+th, td {
+    color: gray;
+}
+
+div {
+    text-align: center;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    background: #35424a;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+footer span {
+    font-weight: bold;
 }

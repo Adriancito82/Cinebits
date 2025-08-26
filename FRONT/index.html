@@ -7,6 +7,7 @@
     <title>Cinebits</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+    <script defer src="index.js"></script>
 </head>
 
 <body>
@@ -14,17 +15,58 @@
         <h1>Cinebits 🎬 🎮</h1>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#movies">Movies</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#movies">Películas</a></li>
+                <li><a href="#about">Videojuegos</a></li>
+                <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
+    <div>
+        <section id="movies">
+            <h2>Películas</h2>
+            <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Género</th>
+                            <th>Año</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Inception</td>
+                            <td>Ciencia Ficción</td>
+                            <td>2010</td>
+                        </tr>
+                        <tr>
+                            <td>The Dark Knight</td>
+                            <td>Acción</td>
+                            <td>2008</td>
+                        </tr>
+                        <tr>
+                            <td>Interstellar</td>
+                            <td>Ciencia Ficción</td>
+                            <td>2014</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="games">
+            <h2>Videojuegos</h2>
+            <p>Explora nuestra colección de videojuegos inspirados en películas populares.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Para consultas, por favor envía un correo a:
+    </div>
     <footer>
         <p>&copy; <span id="year"></span> Creado por Adrián Santana</p>
     </footer>
-    <script src="index.js"></script>
 </body>
 
 </html>
