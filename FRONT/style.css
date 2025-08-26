@@ -6,17 +6,18 @@ body {
 }
 
 h1 {
+    font-family: Monserrat Bold;
+    font-size: 3em;
     text-align: center;
-    color: #c98f8f;
+    color: #FFD54F;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
     padding: 20px 0;
     text-align: center;
+    background: rgba(0, 0, 0, 0.3);
 }
 
 
@@ -34,15 +35,16 @@ nav {
 }
 
 nav a {
-    color: #ffffff;
+    color: white;
     padding: 10px 20px;
     text-decoration: none;
+    font-weight: bold;
     margin: 0 10px;
 }
 
 nav a:hover {
     background: #e8491d;
-    color: #ffffff;
+    color: black;
 }
 
 #section {
