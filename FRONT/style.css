@@ -92,6 +92,9 @@ table {
 
 th, td {
     color: gray;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
 }
 
 div {
