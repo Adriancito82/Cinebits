@@ -57,21 +57,21 @@ nav a:hover {
 #movies {
     padding: 20px;
     margin: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
 }
 
 #games  {
     padding: 20px;
     margin: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
 }
 
 #contact    {
     padding: 20px;
     margin: 20px;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.4);
     border-radius: 8px;
 }
 .container {
@@ -93,10 +93,10 @@ table {
 }
 
 th, td {
-    color: gray;
+    color: black;
     text-align: center;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 2px solid #FFD54F;
 }
 
 div {
