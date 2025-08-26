@@ -7,7 +7,9 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #c98f8f;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -28,9 +30,14 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 nav {
