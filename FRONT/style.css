@@ -1,8 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url(img/ChatGPT\ Image\ 26\ ago\ 2025\,\ 15_31_30.png);
+    background: url(img/ChatGPT\ Image\ 26\ ago\ 2025\,\ 15_31_30.png) no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
+}
+
+body.movies_body {
+    background: url(img/movies_body.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.games_body {
+    background: url(img/games_body.png) no-repeat center center fixed;
+    background-size: cover;
 }
 
 h1 {
