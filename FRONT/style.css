@@ -150,6 +150,10 @@ footer span {
   color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;        /* fija la altura */
+  display: flex;        /* distribuir contenido */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -163,13 +167,15 @@ footer span {
   object-fit: cover;
 }
 
-.card h3 {
+.card h2 {
   margin: 15px 0 10px;
   color: #FFD54F; /* amarillo dorado */
-  font-size: 1.2rem;
+  flex-shrink: 0;  /* no se encoge */
 }
 .card p {
   margin: 5px 0;
+  overflow: hidden;     /* 👉 evita que se salga */
+  text-overflow: ellipsis;
 }
 
 #main-sections {
