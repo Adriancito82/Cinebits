@@ -2,8 +2,11 @@ require('dotenv').config();
 
 const express = require('express');
 const mysql = require('mysql2');
+const cors = require('cors');
+const path = require('path');
 
 const app = express();
+
 const PORT = process.env.DB_PORT;
 
 // Configuración de la conexión
@@ -24,14 +27,28 @@ db.connect(err => {
 });
 
 // Ruta de prueba
-app.get('/', (req, res) => {
-  db.query('SELECT * FROM peliculas', (err, results) => {
+app.use(cors());
+app.use(express.json());
+app.use(express.static(path.join(__dirname, '..', 'FRONT')));
+
+app.get('/peliculas', (req, res) => {
+  db.query('SELECT * FROM cinebits_db.peliculas', (err, results) => {
     if (err) {
-      console.error(err);
-      res.status(500).send('Error en la consulta');
-      return;
+      console.error("Error al obtener películas", err);
+        return res.status(500).json({ error: "Error al obtener películas" });
     }
-    res.json(results);
+      res.json(results);
+  });
+});
+
+
+app.get('/videojuegos', (req, res) => {
+  db.query('SELECT * FROM cinebits_db.videojuegos', (err, results) => {
+    if (err) {
+      console.error("Error al obtener videojuegos", err);
+        return res.status(500).json({ error: "Error al obtener videojuegos" });
+    }
+      res.json(results);
   });
 });
 
