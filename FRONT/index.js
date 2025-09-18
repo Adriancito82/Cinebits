@@ -14,6 +14,7 @@ async function cargarPeliculas() {
                                      <img src="${peli.imagen_url}" width="200">
                                      <p>${peli.texto}</p>
                                      </div>`;
+
                                 contenedor.appendChild(div);
                             });
                         } catch (err) {
@@ -22,6 +23,7 @@ async function cargarPeliculas() {
                     }
                     // Llamamos a la función
                     cargarPeliculas();
+
 
 async function cargarVideojuegos() {
                         try {
